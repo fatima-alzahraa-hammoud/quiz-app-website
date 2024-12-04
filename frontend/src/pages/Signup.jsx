@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 //import { requestApi } from "../utils/request";
 //import { requestMethods } from "../utils/enums/requestsMethod";
-import RegisterImage from "../assets/images/Sign up.gif";
-//import "../styles/register.css";
+import SignupImage from "../assets/images/Sign up.gif";
+import "../styles/signup.css";
 import {useNavigate} from "react-router-dom";
 
-const Register = () =>{
+const Signup = () =>{
     const navigate = useNavigate();
     const [signupForm, setsignupForm] = useState("");
     const [error, setError] = useState("");
@@ -82,10 +82,10 @@ const Register = () =>{
             </div>
 
             <div className="signup-image">
-                <img src={RegisterImage} alt="" />
+                <img src={SignupImage} alt="" />
             </div>
         </div>
     )
 }
 
-export default Register;
+export default Signup;
