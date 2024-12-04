@@ -3,7 +3,7 @@ import loginImage from "../assets/images/Tablet login.gif";
 //import "../styles/base/utilities.css"
 //import { requestApi } from "../utils/request";
 //import {requestMethods} from "../utils/enums/requestsMethod";
-//import "../styles/login.css";
+import "../styles/login.css";
 import {useNavigate} from "react-router-dom";
 
 const Login = () =>{
@@ -70,7 +70,7 @@ const Login = () =>{
             </div>
 
             <div className="login-image">
-                <img src={loginImage} alt="" />
+                <img src={loginImage} alt="login image" />
             </div>
         </div>
     )
