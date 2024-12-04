@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import heroImage from "../assets/images/Online Test.gif";
-import searchIcon from "../assets/icons/search-icon.svg";
+import heroImage from "../../assets/images/Online test.gif";
+import searchIcon from "../../assets/icons/search-icon.svg";
+import "../../styles/heroSection.css"
 
 const HeroSection = () => {
 
@@ -10,7 +11,7 @@ const HeroSection = () => {
                 <h1>Welcome to QuizMaster</h1>
                 <h2>Challenge Your Knowledge!</h2>
                 <p>
-                    Discover exciting quizzes on a variety of topics. Test your knowledge, learn
+                    Disacover exciting quizzes on a variety of topics. Test your knowledge, learn
                     something new, and earn points as you go! Are you ready to take the challenge?
                 </p>
                 <div className="search-bar">
