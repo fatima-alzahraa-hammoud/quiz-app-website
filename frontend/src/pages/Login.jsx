@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import loginImage from "../assets/images/Tablet login.gif";
 //import "../styles/base/utilities.css"
 //import { requestApi } from "../utils/request";
 //import {requestMethods} from "../utils/enums/requestsMethod";
@@ -69,7 +70,7 @@ const Login = () =>{
             </div>
 
             <div className="login-image">
-                <img src="" alt="" />
+                <img src={loginImage} alt="" />
             </div>
         </div>
     )
