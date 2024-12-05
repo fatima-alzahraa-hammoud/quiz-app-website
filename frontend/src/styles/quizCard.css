@@ -132,3 +132,16 @@ body {
         justify-content: center;
     }
 }
+
+
+.quiz-card {
+    position: relative;
+}
+.dialog {
+    position: absolute;
+    top: 50%; /* Adjust this to position appropriately */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it layers above the card */
+}
+  

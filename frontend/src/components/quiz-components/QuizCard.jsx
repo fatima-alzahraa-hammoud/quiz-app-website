@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import "../../styles/quizCard.css";
-import AttemptDialog from "../dialogs/AttemptDialog";
 
-const QuizCard = ({quiz}) => {
-    const {topic, type, duration, nbOfQuestions, solvedBy, nbOfAttempts, quizId} = quiz;
-    const [openAttemptDialog, setOpenAttemptDialog] = useState(false);
-    const [openQuiz, setOpenQuiz] = useState(false);
+const QuizCard = ({quiz, onStartQuiz}) => {
+    const {topic, type, duration, nbOfQuestions, solvedBy, nbOfAttempts, quizId} = quiz;    
 
     return(
         <div className="quiz-card">
@@ -45,21 +42,9 @@ const QuizCard = ({quiz}) => {
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
                 </div>
-                <button className="start-now-btn" onClick={() => {setOpenAttemptDialog(true)}}>Start Quiz</button>
+                <button className="start-now-btn" onClick={onStartQuiz}>Start Quiz</button>
             </div>
 
-            {openAttemptDialog &&
-                <AttemptDialog
-                    quizId={quizId}
-                    onClose={() => setOpenAttemptDialog(false)}
-                    onSave={() => setOpenQuiz(true)}
-                />
-            }
-
-            {/*open the quiz page*/}
-            {openQuiz
-            
-            }
         </div>
     );
 };
