@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.quiz-card {
+    width: 350px;
+    margin: 20px auto;
+    background: linear-gradient(145deg, #f7f7f7, #ffffff);
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.quiz-card:hover {
+    transform: scale(1.03);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.8);
+}
+
+.card-head {
+    background-color: #4a5fd5;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-head .quiz-topic-save {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-topic {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-head .quiz-topic-save svg {
+    cursor: pointer;
+    transition: fill 0.6s;
+}
+
+.card-head .quiz-topic-save svg:hover {
+    fill: #ffd700;
+    color: #ffd700;
+}
+
+.quiz-type {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.quiz-duration {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.quiz-nb-questions, .quiz-nb-students, .quiz-nb-attempts {
+    text-align: left;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+.quiz-nb-students{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quiz-rating {
+    margin: 15px 0;
+    display: flex;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+.quiz-rating i {
+    color: #ffcc00;
+    font-size: 1.2rem;
+}
+
+.start-now-btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.start-now-btn:hover {
+    background-color: #d81b60;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .quiz-card {
+        width: 90%;
+    }
+
+    .card-head {
+        text-align: center;
+    }
+
+    .quiz-topic-save {
+        flex-direction: column;
+    }
+
+    .quiz-rating {
+        justify-content: center;
+    }
+}

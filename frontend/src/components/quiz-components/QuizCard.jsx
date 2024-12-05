@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/quizCard.css";
 //import AttemptDialog from "../dialogs/AttemptDialog";
 
 const QuizCard = ({quiz}) => {
@@ -22,13 +23,13 @@ const QuizCard = ({quiz}) => {
                         <line x1="12" x2="15" y1="14" y2="11"/>
                         <circle cx="12" cy="14" r="8"/>
                     </svg>
-                    {duration}
+                    <span>{duration}</span>
                 </p>
             </div >
             <div className="card-body">
                 <p className="quiz-nb-questions">Number of questions: {nbOfQuestions}</p>
                 <p className="quiz-nb-students">Solved by: 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users">
                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
                         <circle cx="9" cy="7" r="4"/>
                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
