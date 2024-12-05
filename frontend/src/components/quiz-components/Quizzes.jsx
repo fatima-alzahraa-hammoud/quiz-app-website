@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 //import { requestApi } from "../../utils/request";
 import "../../styles/base/utilities.css";
-//import "../../styles/quizzes.css";
+import "../../styles/quizzes.css";
 import QuizCard from "./QuizCard";
 
 const Quizzes = () => {
