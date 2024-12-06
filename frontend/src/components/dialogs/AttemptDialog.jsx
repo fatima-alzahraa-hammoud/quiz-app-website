@@ -2,7 +2,7 @@ import React, {useState, useRef} from "react";
 import "../../styles/base/utilities.css";
 import "../../styles/dialog.css";
 
-const AttemptDialog = ({onClose, onSave, quizId}) => {
+const AttemptDialog = ({onClose, onSave}) => {
 
     const handleAttempt = async(e) => {
         e.preventDefault();

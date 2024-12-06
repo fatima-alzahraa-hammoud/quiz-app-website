@@ -4,8 +4,8 @@ import scoreSlice from "./scoreSlice";
 
 const store = configureStore({
     reducer: {
-        quizState: quizSlice.reducer,
-        scoreState: scoreSlice.reducer,
+        quizzes: quizSlice.reducer,
+        score: scoreSlice.reducer,
     },
 });
 

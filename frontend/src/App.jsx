@@ -5,6 +5,7 @@ import Signup from './pages/Signup';
 import Home from './pages/Home';
 import { Provider } from "react-redux";
 import store from './redux/store';
+import QuizPage from './pages/QuizPage';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Provider store={store}>  
         <Routes>
           <Route path='/Home' element={<Home />}/>
+          <Route path="/quiz/:id" element={<QuizPage />} />
         </Routes>
       </Provider>
     </div>
